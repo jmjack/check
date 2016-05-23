@@ -1,0 +1,59 @@
+body{
+    background-image: url("../photo/139-150612164604.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+
+form{
+    background-color: rgba(210, 251, 255, 0.80);
+    position: relative;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 14%;
+}
+#sign{
+    position: relative;
+    left: 35%;
+    font-family: "Microsoft YaHei","黑体","宋体",sans-serif;
+    font-size: 250%;
+    font-weight: 400;
+    color: rgba(49, 0, 111, 1);
+}
+#input{
+    position: relative;
+    left:25%;
+}
+input{
+    border: hidden;
+    height: 40px;
+}
+#buttom_input{
+    border-top: dotted;
+    border-width: 1px;
+}
+#button{
+    width: 22%;
+    background-color: rgba(74, 89, 255, 0.7);
+    color: rgba(255, 255, 255, 0.99);
+    margin-top: 10%;
+    margin-bottom: 10%;
+    transition: 0.7s;
+}
+#button:hover{
+    background-color: rgba(0, 156, 4, 1);
+}
+#register{
+    width: 22%;
+    color: azure;
+    background-color: #ff0026;
+    transition: 0.7s;
+}
+#register:hover{
+    background-color: rgba(255, 34, 101, 0.5);
+    color: #000000;
+}
+.enter{
+    width: 45%;
+}
