@@ -1,3 +1,10 @@
+<?php
+    $lastlogin=$_COOKIE['lasttime'];
+    setcookie("lasttime",date("Y-m-d H-i-s"),time()+3600*24*7);
+    if (!empty($lastlogin))
+        echo "上次登录时间：".$lastlogin;
+    $cookie_user=$_COOKIE['name'];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +16,7 @@
     <form action="ensure.php" method="post">
         <h1 id="sign">sign in</h1>
         <div id="input">
-        <input type="text" class="enter" name="user">
+        <input type="text" class="enter"name="user" <?php echo "value=$cookie_user"; ?>>
         <br/>
         <input id="buttom_input" class="enter" type="password" name="password">
             <br/>
